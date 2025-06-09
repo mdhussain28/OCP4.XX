@@ -1,5 +1,5 @@
 $TTL    604800
-@       IN      SOA     okd4-services.okd.local. admin.okd.local. (
+@       IN      SOA     ocp4-services.ocp.local. admin.ocp.local. (
                   6     ; Serial
              604800     ; Refresh
               86400     ; Retry
@@ -8,25 +8,25 @@ $TTL    604800
 )
 
 ; name servers - NS records
-    IN      NS      okd4-services.okd.local.
+    IN      NS      ocp4-services.ocp.local.
 
 ; name servers - PTR records
-210    IN    PTR    okd4-services.okd.local.
+210    IN    PTR    ocp4-services.ocp.local.
 
 ; OpenShift Container Platform Cluster - PTR records
-200    IN    PTR    okd4-bootstrap.lab.okd.local.
-201    IN    PTR    okd4-control-plane-1.lab.okd.local.
-202    IN    PTR    okd4-control-plane-2.lab.okd.local.
-203    IN    PTR    okd4-control-plane-3.lab.okd.local.
-204    IN    PTR    okd4-compute-1.lab.okd.local.
-205    IN    PTR    okd4-compute-2.lab.okd.local.
-210    IN    PTR    api.lab.okd.local.
-210    IN    PTR    api-int.lab.okd.local.
+200    IN    PTR    ocp4-bootstrap.lab.ocp.local.
+201    IN    PTR    ocp4-control-plane-1.lab.ocp.local.
+202    IN    PTR    ocp4-control-plane-2.lab.ocp.local.
+203    IN    PTR    ocp4-control-plane-3.lab.ocp.local.
+204    IN    PTR    ocp4-compute-1.lab.ocp.local.
+205    IN    PTR    ocp4-compute-2.lab.ocp.local.
+210    IN    PTR    api.lab.ocp.local.
+210    IN    PTR    api-int.lab.ocp.local.
 ;Added
-okd4-services.okd.local.          IN      A       192.168.100.210
-okd4-bootstrap.lab.okd.local.        IN      A      192.168.100.200
-okd4-control-plane-1.lab.okd.local.        IN      A      192.168.100.201
-okd4-control-plane-2.lab.okd.local.         IN      A      192.168.100.202
-okd4-control-plane-3.lab.okd.local.         IN      A      192.168.100.203
-okd4-compute-1.lab.okd.local.        IN      A      192.168.100.204
-okd4-compute-2.lab.okd.local.        IN      A      192.168.100.205
+ocp4-services.ocp.local.          IN      A       192.168.100.210
+ocp4-bootstrap.lab.ocp.local.        IN      A      192.168.100.200
+ocp4-control-plane-1.lab.ocp.local.        IN      A      192.168.100.201
+ocp4-control-plane-2.lab.ocp.local.         IN      A      192.168.100.202
+ocp4-control-plane-3.lab.ocp.local.         IN      A      192.168.100.203
+ocp4-compute-1.lab.ocp.local.        IN      A      192.168.100.204
+ocp4-compute-2.lab.ocp.local.        IN      A      192.168.100.205
